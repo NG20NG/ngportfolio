@@ -1,0 +1,13 @@
+.secondBoxContainer {
+  border: 1px solid black;
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+.secondBoxContainer > div {
+  border: 1px solid black;
+  width: 250px;
+  height: 300px;
+}

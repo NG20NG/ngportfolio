@@ -1,0 +1,50 @@
+.firstBoxContainer {
+  width: 100%;
+  height: 500px;
+  margin-top: 100px;
+  display: flex;
+}
+/*==========================================================*/
+.rightContainer {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  background-color: var(--dark-black-style);
+}
+.descriptionContainer {
+  width: 80%;
+  height: 85%;
+  margin: auto;
+}
+.descriptionContainer > p {
+  font-size: 25px;
+  letter-spacing: 2px;
+  color: var(--white-text-color);
+  line-height: 45px;
+}
+/*==========================================================*/
+.leftContainer {
+  width: 65%;
+  height: 100%;
+  background-image: url("../../public/index/backgroundNG.jpg");
+  background-size: cover;
+}
+@media only screen and (max-width: 600px) {
+  .firstBoxContainer {
+    flex-direction: column;
+  }
+  .rightContainer {
+    width: 100%;
+  }
+  .descriptionContainer {
+    width: 90%;
+    height: 100%;
+  }
+  .descriptionContainer > p {
+    font-size: 20px;
+  }
+  .leftContainer {
+    width: 100%;
+    border: 1px solid red;
+  }
+}
