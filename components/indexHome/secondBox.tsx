@@ -34,7 +34,12 @@ const SecondBox = () => {
         return (
           <div key={i} className={sbox.boxCard}>
             <div className={sbox.cardTop}>
-              <Image src={`${e[1]}`} height={e[2][0]} width={e[2][1]} />
+              <Image
+                src={`${e[1]}`}
+                height={e[2][0]}
+                width={e[2][1]}
+                alt="NG skills logo"
+              />
             </div>
             <div
               className={sbox.cardBottom}
