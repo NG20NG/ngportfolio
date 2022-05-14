@@ -1,0 +1,44 @@
+.mobileMenuContainer {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  .mobileMenuContainer {
+    display: flex;
+    width: 101vw;
+    height: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+    padding-bottom: 0px;
+    background-color: var(--dark-black-style);
+    z-index: -1;
+  }
+  .mobileMenu {
+    width: 95%;
+    height: fit-content;
+  }
+  .listMenuUL {
+    width: 100%;
+    height: 180px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+  .listMenuUL > li {
+    width: 95%;
+    height: 35px;
+    margin: auto;
+    box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.412);
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    border-bottom: 2px solid rgb(0, 149, 172);
+    background-color: var(--dark-black-style-2);
+    color: var(--white-text-color);
+    border-radius: 4px;
+    letter-spacing: 1px;
+  }
+}

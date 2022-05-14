@@ -78,18 +78,7 @@
   color: var(--red-text-color);
 }
 .scrollToFooterBTN {
-  position: relative;
-  top: 30px;
-  border: none;
-  background-color: var(--dark-black-style);
-  width: 60px;
-  height: 60px;
-  border: 2px solid white;
-  border-radius: 50px;
-  color: var(--white-text-color);
-  transition: 0.3s;
-  cursor: pointer;
-  box-shadow: inset 0px 0px 20px 0px rgba(0, 0, 0, 0.441);
+  display: none;
 }
 .scrollToFooterBTN:hover {
   transition: 0.3s;
@@ -112,10 +101,26 @@
     margin: 0;
     font-size: 20px;
   }
+  .scrollToFooterBTNContainer {
+    z-index: 200px;
+  }
   .scrollToFooterBTN {
+    position: relative;
+    color: var(--white-text-color);
+    background-color: var(--dark-black-style);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 50px;
     height: 50px;
     margin: 0;
     border-radius: 5px;
+    border: 2px solid white;
+    cursor: pointer;
+    top: 23px;
+    box-shadow: inset 0px 0px 20px 0px rgba(0, 0, 0, 0.441);
+  }
+  .scrollToFooterBTN:hover {
+    background-color: var(--dark-black-style);
   }
 }

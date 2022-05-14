@@ -41,7 +41,7 @@ const MenuAnimation = () => {
     }
   };
   return (
-    <div className={a.menuAnimationContainer}>
+    <div className={a.menuAnimationContainer} style={{ zIndex: 999 }}>
       <div className={a.menuAnimation}>
         <div ref={(left) => (r.left = left)} className={a.boxLeft}></div>
         <div ref={(right) => (r.right = right)} className={a.boxRight}></div>

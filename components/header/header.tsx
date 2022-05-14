@@ -1,9 +1,17 @@
-import React, { useEffect } from "react";
-
+import React, { useContext } from "react";
 import header from "./header.module.css";
-import gsap from "gsap";
-
+//
+import { menuMobileContext } from "../../contexts/contexts";
+//
+//
 const Header = () => {
+  const { menuMobileAnimation, isAnimated } = useContext(menuMobileContext);
+  let width: any;
+  if (typeof window === "object" ? window.innerWidth : undefined) {
+    width = typeof window === "object" ? window.innerWidth : undefined;
+  }
+  console.log(width);
+
   return (
     <header className={header.header}>
       <nav className={header.nav}>
@@ -31,8 +39,13 @@ const Header = () => {
         <br />
         ton développeur web préférait :D
       </div>
-      <div className={header.scrollToFooterBTNContainer}>
-        <button className={header.scrollToFooterBTN}>Menu</button>
+      <div className={header.scrollToFooterBTNContainer} style={{ zIndex: 1 }}>
+        <button
+          className={header.scrollToFooterBTN}
+          onClick={() => width < 600 && menuMobileAnimation()}
+        >
+          Menu
+        </button>
       </div>
     </header>
   );

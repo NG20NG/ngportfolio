@@ -1,13 +1,58 @@
 .secondBoxContainer {
-  border: 1px solid black;
   width: 100%;
   height: auto;
   margin-top: 50px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-.secondBoxContainer > div {
-  border: 1px solid black;
-  width: 250px;
-  height: 300px;
+.boxCard {
+  width: 130px;
+  height: 150px;
+  background-color: rgb(242, 242, 242);
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.382);
+  transition: 0.3s;
+  margin: 10px 0px;
+}
+.boxCard:hover {
+  transition: 0.3s;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.144);
+}
+.boxCard:nth-child(1),
+.boxCard:nth-child(2),
+.boxCard:nth-child(3) {
+  background-color: rgb(240, 240, 240);
+}
+.boxCard:nth-child(4) {
+  background-color: var(--dark-black-style);
+}
+.boxCard:nth-child(6) {
+  background-color: var(--dark-black-style);
+}
+.boxCard:nth-child(8) {
+  background-color: var(--dark-black-style);
+}
+.cardTop {
+  height: 78%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cardBottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 21%;
+  font-size: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.744);
+}
+@media only screen and (max-width: 600px) {
+  .secondBoxContainer {
+    justify-content: space-around;
+  }
 }
