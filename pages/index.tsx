@@ -2,6 +2,9 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import index from "../styles/index.module.css";
 //
+import { useContext } from "react";
+import { menuMobileContext } from "../contexts/contexts";
+//
 import MobileMenu from "../components/header/displayMobileMenu";
 import FirstBox from "../components/indexHome/firstBox";
 import SecondBox from "../components/indexHome/secondBox";

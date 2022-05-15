@@ -11,8 +11,9 @@ const FirstBox = () => {
       <div className={fbox.rightContainer}>
         <div className={fbox.descriptionContainer}>
           <p>
-            {`je suis un jeune développeur web débrouillard j'aime le calme et
-            l'esprit d'équipe assoiffé de connaissance`}
+            {`Je me présente Je suis un jeune développeur web assoiffe de 
+            connaissance débrouillard j’aime la musique le
+            calme et l’esprit d’équipe`}
           </p>
         </div>
       </div>

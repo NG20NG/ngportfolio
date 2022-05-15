@@ -95,8 +95,12 @@
   .nav > ul {
     display: none;
   }
+  .ng20TitleContainer {
+    height: 40px;
+    margin-top: 10px;
+  }
   .descriptionUnderNav {
-    width: 92%;
+    width: 95%;
     padding: 5px;
     margin: 0;
     font-size: 20px;

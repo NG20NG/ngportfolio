@@ -1,5 +1,13 @@
 .footer {
-  height: 100vh;
+  height: 200px;
   width: 100vw;
-  background-color: darkslategrey;
+  background-color: var(--dark-black-style);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.secondFooter {
+  width: 80%;
+  height: 90%;
+  border: 1px solid white;
 }

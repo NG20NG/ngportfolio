@@ -5,12 +5,7 @@ import { menuMobileContext } from "../../contexts/contexts";
 //
 //
 const Header = () => {
-  const { menuMobileAnimation, isAnimated } = useContext(menuMobileContext);
-  let width: any;
-  if (typeof window === "object" ? window.innerWidth : undefined) {
-    width = typeof window === "object" ? window.innerWidth : undefined;
-  }
-  console.log(width);
+  const { menuMobileAnimation } = useContext(menuMobileContext);
 
   return (
     <header className={header.header}>
@@ -42,7 +37,7 @@ const Header = () => {
       <div className={header.scrollToFooterBTNContainer} style={{ zIndex: 1 }}>
         <button
           className={header.scrollToFooterBTN}
-          onClick={() => width < 600 && menuMobileAnimation()}
+          onClick={() => menuMobileAnimation()}
         >
           Menu
         </button>
